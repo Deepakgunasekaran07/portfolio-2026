@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak G - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Deepak G</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#certificates" class="nav-link">Certificates</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero" data-aos="fade-in">
+        <div class="hero-content">
+            <div class="hero-text" data-aos="fade-right" data-aos-delay="200">
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Deepak G</span></h1>
+                <p class="hero-subtitle">Aspiring Software Developer &amp; Tech Enthusiast</p>
+                <p class="hero-description">
+                    Final year Computer Science and Engineering student with a passion for innovative technologies
+                    and strong commitment to technical growth. Ready to contribute to exciting projects and make a
+                    difference.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/deepakgunasekarn" target="_blank" class="social-link"
+                        aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Deepakgunasekaran07" target="_blank" class="social-link"
+                        aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:deepakgunasekaran07@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-delay="400">
+                <div class="profile-image floating">
+                    <img src="images/profile.jpg" alt="Deepak G Profile Picture">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <p>
+                        I am a passionate final year Computer Science and Engineering student from Chennai,
+                        currently pursuing my B.E. at KCG College of Technology. With a CGPA of 7.63, I have
+                        demonstrated strong academic performance and dedication to learning.
+                    </p>
+                    <p>
+                        My journey in technology has been driven by curiosity and a desire to solve real-world
+                        problems. I enjoy working on innovative projects that challenge me to think critically
+                        and apply my technical skills in meaningful ways.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat" data-aos="zoom-in" data-aos-delay="100">
+                            <h3>3+</h3>
+                            <p>Years of Learning</p>
+                        </div>
+                        <div class="stat" data-aos="zoom-in" data-aos-delay="200">
+                            <h3>5+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat" data-aos="zoom-in" data-aos-delay="300">
+                            <h3>2</h3>
+                            <p>Internships</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-skills" data-aos="fade-left">
+                    <h3>Soft Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-brain"></i>
+                            <span>Problem Solving</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Logical Thinking</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-users"></i>
+                            <span>Teamwork</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-comments"></i>
+                            <span>Communication</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">My academic journey</p>
+            </div>
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>B.E. Computer Science and Engineering</h3>
+                            <span class="timeline-date">2022 - 2026</span>
+                        </div>
+                        <h4>KCG College of Technology</h4>
+                        <p>CGPA: 7.63</p>
+                        <p>Currently pursuing my final year with focus on software development, web technologies, and
+                            emerging tech trends.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Higher Secondary</h3>
+                            <span class="timeline-date">2021 - 2022</span>
+                        </div>
+                        <h4>Vivekananda Vidyalaya Matric Hr.Sec.School</h4>
+                        <p>Percentage: 78%</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Secondary</h3>
+                            <span class="timeline-date">2019 - 2020</span>
+                        </div>
+                        <h4>Vivekananda Vidyalaya Matric Hr.Sec.School</h4>
+                        <p>Percentage: 61%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Experience</h2>
+                <p class="section-subtitle">My professional journey</p>
+            </div>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h3>Internship</h3>
+                        <span class="experience-date">Jul - Aug 2025</span>
+                    </div>
+                    <h4>Quant5x</h4>
+                    <p>
+                        Gained hands-on experience in website development and software engineering practices.
+                        Worked on real-world projects that enhanced my technical skills and understanding of
+                        industry standards.
+                    </p>
+                    <div class="experience-tags">
+                        <span class="tag">Web Development</span>
+                        <span class="tag">Software Engineering</span>
+                        <span class="tag">Team Collaboration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Skills</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Web Technologies</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks & Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>Spring Boot</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Flask</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="portfolio" data-aos="fade-up" style="margin-bottom: 50px;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">My professional portfolio</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-content">
+                        <h3>Student Management System</h3>
+                        <p>
+                            A comprehensive system built with Spring Boot featuring REST API, MySQL database,
+                            and full CRUD operations for efficient student data management.
+                        </p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">REST API</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Java</span>
+                        </div>
+                        <div class="portfolio-links-small">
+                            <a href="https://github.com/Deepakgunasekaran07/StudentManagement.git"
+                                class="portfolio-link-icon" title="View Source" target="_blank"
+                                rel="noopener noreferrer"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-content">
+                        <h3>Care Companion – Elderly Care Solution</h3>
+                        <p>
+                            An innovative deep learning application using CNN, SVM, and GradCAM for elderly care,
+                            with a user-friendly Flask/MongoDB backend interface.
+                        </p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">CNN</span>
+                            <span class="tag">Flask</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <div class="portfolio-links-small">
+                            <a href="https://github.com/Deepakgunasekaran07/MedTech.git" class="portfolio-link-icon"
+                                title="View Source" target="_blank" rel="noopener noreferrer"><i
+                                    class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Certificates</h2>
+                <p class="section-subtitle">Formal recognition of my skills</p>
+            </div>
+            <div class="certificates-grid">
+                <div class="certificate-card" data-aos="fade-up">
+                    <div class="cert-info">
+                        <div class="cert-icon"><i class="fab fa-python"></i></div>
+                        <h3>Python Fundamentals</h3>
+                        <p>Comprehensive certification covering Python core concepts and data structures.</p>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1ULnSjyyv-LW4c1zKg_jzAQXCBEz3zL2-/view?usp=drive_link"
+                        target="_blank" class="cert-btn">
+                        View Certificate <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <div class="certificate-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="cert-info">
+                        <div class="cert-icon"><i class="fas fa-database"></i></div>
+                        <h3>MongoDB Developer</h3>
+                        <p>NoSQL database management and integration with modern applications.</p>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1l1BLnRxVtLRb0d-Gmt0bBuBo-nMX1JiA/view?usp=drive_link"
+                        target="_blank" class="cert-btn">
+                        View Certificate <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <div class="certificate-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="cert-info">
+                        <div class="cert-icon"><i class="fas fa-microchip"></i></div>
+                        <h3>Mastering AI Tools</h3>
+                        <p>Workshop on leveraging artificial intelligence for productivity and development.</p>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1kBc78wqHBb2VoWCB8_l4w8JTinzrEMzZ/view?usp=drive_link"
+                        target="_blank" class="cert-btn">
+                        View Certificate <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <div class="certificate-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="cert-info">
+                        <div class="cert-icon"><i class="fas fa-vial"></i></div>
+                        <h3>Introduction to Selenium</h3>
+                        <p>Automation testing and web scraping fundamentals using Selenium.</p>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1zKjWc5zEMiaEB2R1wRpsFJ6SoIrZGVh5/view?usp=drive_link"
+                        target="_blank" class="cert-btn">
+                        View Certificate <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Services</h2>
+                <p class="section-subtitle">What I can do for you</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Full-stack web development with modern technologies including front-end and back-end
+                        integration
+                        using Java, Spring Boot, HTML, CSS, and JavaScript.</p>
+                    <ul class="service-features">
+                        <li>Front-end Development</li>
+                        <li>Back-end Integration</li>
+                        <li>Database Management</li>
+                        <li>REST API Development</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Application Development</h3>
+                    <p>Custom application development using Python, Flask, and MongoDB for scalable and efficient
+                        solutions tailored to your needs.</p>
+                    <ul class="service-features">
+                        <li>Python Applications</li>
+                        <li>Database Design</li>
+                        <li>API Development</li>
+                        <li>System Integration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together on your next project</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p><a href="tel:+917418592586" style="color:inherit;text-decoration:none;">+91
+                                    7418592586</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p><a href="mailto:deepakgunasekaran07@gmail.com"
+                                    style="color:inherit;text-decoration:none;">deepakgunasekaran07@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <p><a href="https://www.linkedin.com/in/deepakgunasekarn" target="_blank"
+                                    style="color:inherit;text-decoration:none;">linkedin.com/in/deepakgunasekarn</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="user_name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="user_email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submitBtn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="loading-spinner" style="display: none;"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Deepak G. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/deepakgunasekarn" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Deepakgunasekaran07" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:deepakgunasekaran07@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
