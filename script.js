@@ -1,7 +1,4 @@
-// Initialize EmailJS
-(function () {
-    emailjs.init("5-ovRoDbJx2sVAmdn");
-})();
+// EmailJS Initialization handles at DOMContentLoaded to ensure SDK availability
 
 // Mobile Navigation Toggle
 const mobileMenu = document.getElementById('mobile-menu');
@@ -157,6 +154,11 @@ document.addEventListener('DOMContentLoaded', () => {
 const contactForm = document.getElementById('contactForm');
 
 if (contactForm) {
+    // Initialize EmailJS here to ensure it's ready
+    if (typeof emailjs !== 'undefined') {
+        emailjs.init("5-ovRoDbJx2sVAmdn");
+    }
+
     contactForm.addEventListener('submit', function (e) {
         e.preventDefault();
 
@@ -183,14 +185,17 @@ if (contactForm) {
         const btnText = submitBtn.querySelector('.btn-text');
         const loadingSpinner = submitBtn.querySelector('.loading-spinner');
 
-        btnText.style.display = 'none';
-        loadingSpinner.style.display = 'inline-block';
+        if (btnText) btnText.style.display = 'none';
+        if (loadingSpinner) loadingSpinner.style.display = 'inline-block';
         submitBtn.disabled = true;
 
         // Prepare template parameters
+        // Many EmailJS templates use from_name, from_email, etc.
         const templateParams = {
             user_name: name,
             user_email: email,
+            from_name: name,
+            reply_to: email,
             subject: subject,
             message: message,
             to_email: 'deepakgunasekaran07@gmail.com'
@@ -203,13 +208,14 @@ if (contactForm) {
                 showNotification('Thank you for your message! I\'ll get back to you soon.', 'success');
                 contactForm.reset();
             }, function (error) {
-                console.log('FAILED...', error);
-                showNotification('Sorry, there was an error sending your message. Please try again.', 'error');
+                console.error('FAILED...', error);
+                const errorMsg = error.text || error.message || 'Unknown error';
+                showNotification(`Sending failed: ${errorMsg}. Please try again later.`, 'error');
             })
             .finally(function () {
                 // Reset button state
-                btnText.style.display = 'inline';
-                loadingSpinner.style.display = 'none';
+                if (btnText) btnText.style.display = 'inline';
+                if (loadingSpinner) loadingSpinner.style.display = 'none';
                 submitBtn.disabled = false;
             });
     });
